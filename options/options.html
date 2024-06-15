@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Extension Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Extension Options</h1>
+        <h2>Search Engines to Exclude</h2>
+        <form id="searchEnginesForm">
+            <div id="searchEnginesList">
+                <div class="engine-input">
+                    <input type="text" name="searchEngine" value="google.com">
+                    <button type="button" onclick="removeEngine(this)">Remove</button>
+                </div>
+            </div>
+            <button type="button" id="addEngine">Add Search Engine</button>
+            <button type="submit">Save</button>
+        </form>
+        <button id="modifyHistory">Modify History</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>
